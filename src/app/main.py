@@ -21,7 +21,7 @@ mydb = mysql.connector.connect(
 def menu():
     user_input = int(input('Enter your choice: '))
     if user_input == 1:
-        add_stars(account_id=1234, stars=30)
+        add_stars()
 
     elif user_input == 2:
         register_a_new_transaction()
@@ -49,7 +49,7 @@ def add_stars_to_account(account_id, add_count):
         return False
 
 
-def add_stars(account_id, stars):
+def add_stars():
     print('Tha add stars functionality will be added in this function')
 
 
