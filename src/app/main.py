@@ -65,4 +65,4 @@ def summary():
     print('The Summary view will be added in this function')
 
 
-add_stars_to_account(account_id='b7b68fb3-392d-11ed-b824-3c2c30ef82a0', add_count=3)
+menu()
