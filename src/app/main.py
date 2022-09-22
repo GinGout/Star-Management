@@ -50,8 +50,7 @@ def add_stars_to_account(account_id, add_count):
 
 
 def add_stars(account_id, stars):
-    total_stars = (f'{stars} + {new_stars}')
-    return total_stars
+    print('Tha add stars functionality will be added in this function')
 
 
 def register_a_new_transaction():
