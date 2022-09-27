@@ -1,4 +1,4 @@
-import mysql.connector
+
 
 print(
     """============================================================================================================
@@ -8,13 +8,6 @@ print(
 ============================================================================================================
 Menu:
 [1] Add stars       [2] Register a new transaction    [3] View transactions    [4] Summary"""
-)
-
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="admin",
-    database="mysql"
 )
 
 
@@ -38,17 +31,6 @@ def menu():
     menu()
 
 
-def add_stars_to_account(account_id, add_count):
-    cursor = mydb.cursor()
-    update_table = f"update stars.account set stars = stars + {add_count} where account_id = '{account_id}'"
-    no_of_records_updated = cursor.execute(update_table)
-    mydb.commit()
-    if no_of_records_updated == 1:
-        return True
-    else:
-        return False
-
-
 def add_stars():
     print('Tha add stars functionality will be added in this function')
 
@@ -65,4 +47,3 @@ def summary():
     print('The Summary view will be added in this function')
 
 
-menu()
